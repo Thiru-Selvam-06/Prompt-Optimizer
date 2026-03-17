@@ -1,19 +1,19 @@
 <div align="center">
 
 <!-- FIRE ANIMATED HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,15,18,20,24&amp;height=280&amp;section=header&amp;text=🔥%20FIRE%20prompts&amp;fontSize=80&amp;fontAlignY=38&amp;desc=AI%20Prompt%20Optimizer%20for%20ChatGPT%20%26%20Claude&amp;descSize=22&amp;descAlignY=58&amp;animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=🔥%20PromptOptimizer&fontSize=90&fontAlignY=35&desc=AI%20Prompt%20Optimizer%20For%20ChatGPT%20and%20Claude&descSize=25&descAlignY=55&animation=twinkling" width="100%"/>
 
 <!-- DYNAMIC BADGE CONSTELLATION -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Browser-Chrome%20%7C%20Edge%20%7C%20Brave-4285F4?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="browsers"/>
-  <img src="https://img.shields.io/badge/AI-Gemini%20%2B%20Groq-FF6B6B?style=for-the-badge&amp;logo=google&amp;logoColor=white" alt="ai"/>
-  <img src="https://img.shields.io/badge/Price-FREE-00C853?style=for-the-badge&amp;logo=cashapp&amp;logoColor=white" alt="free"/>
-  <img src="https://img.shields.io/badge/Version-2.2-blueviolet?style=for-the-badge&amp;logo=semanticweb&amp;logoColor=white" alt="version"/>
+  <img src="https://img.shields.io/badge/Browser-Chrome%20%7C%20Edge%20%7C%20Brave-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="browsers"/>
+  <img src="https://img.shields.io/badge/AI-Gemini%20%2B%20Groq-FF6B6B?style=for-the-badge&logo=google&logoColor=white" alt="ai"/>
+  <img src="https://img.shields.io/badge/Price-FREE-00C853?style=for-the-badge&logo=cashapp&logoColor=white" alt="free"/>
+  <img src="https://img.shields.io/badge/Version-2.2-blueviolet?style=for-the-badge&logo=semanticweb&logoColor=white" alt="version"/>
 </p>
 
 <!-- ANIMATED TAGLINE -->
 <h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&amp;size=20&amp;duration=2500&amp;pause=800&amp;color=F75C7E&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;width=700&amp;height=80&amp;lines=Transform+vague+questions+%E2%9E%A1%EF%B8%8F+expert+prompts;Get+10x+better+AI+responses+with+one+click;Powered+by+Gemini+%26+Groq+%E2%9A%A1" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=20&duration=2500&pause=800&color=F75C7E&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Transform+vague+questions+%E2%9E%A1%EF%B8%8F+expert+prompts;Get+10x+better+AI+responses+with+one+click;Powered+by+Gemini+%26+Groq+%E2%9A%A1" alt="Typing SVG" />
 </h3>
 
 <!-- FEATURE BADGES -->
@@ -24,37 +24,6 @@
   <img src="https://img.shields.io/badge/%F0%9F%94%92-Privacy%20First-2ecc71?style=flat-square" alt="privacy"/>
   <img src="https://img.shields.io/badge/%E2%9A%A1-Real--time-ffa502?style=flat-square" alt="realtime"/>
 </p>
-
-</div><div align="center">
-
-<!-- FIRE ANIMATED HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,15,18,20,24&amp;height=280&amp;section=header&amp;text=🔥%20FIRE%20prompts&amp;fontSize=80&amp;fontAlignY=38&amp;desc=AI%20Prompt%20Optimizer%20for%20ChatGPT%20%26%20Claude&amp;descSize=22&amp;descAlignY=58&amp;animation=fadeIn" width="100%"/>
-
-<!-- DYNAMIC BADGE CONSTELLATION -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Browser-Chrome%20%7C%20Edge%20%7C%20Brave-4285F4?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="browsers"/>
-  <img src="https://img.shields.io/badge/AI-Gemini%20%2B%20Groq-FF6B6B?style=for-the-badge&amp;logo=google&amp;logoColor=white" alt="ai"/>
-  <img src="https://img.shields.io/badge/Price-FREE-00C853?style=for-the-badge&amp;logo=cashapp&amp;logoColor=white" alt="free"/>
-  <img src="https://img.shields.io/badge/Version-2.2-blueviolet?style=for-the-badge&amp;logo=semanticweb&amp;logoColor=white" alt="version"/>
-</p>
-
-<!-- ANIMATED TAGLINE -->
-<h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&amp;size=20&amp;duration=2500&amp;pause=800&amp;color=F75C7E&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;width=700&amp;height=80&amp;lines=Transform+vague+questions+%E2%9E%A1%EF%B8%8F+expert+prompts;Get+10x+better+AI+responses+with+one+click;Powered+by+Gemini+%26+Groq+%E2%9A%A1" alt="Typing SVG" />
-</h3>
-
-<!-- FEATURE BADGES -->
-<p align="center">
-  <img src="https://img.shields.io/badge/%E2%9C%A8-Instant%20Optimization-ff6b9d?style=flat-square" alt="instant"/>
-  <img src="https://img.shields.io/badge/%F0%9F%9A%80-One%20Click-c56cf0?style=flat-square" alt="oneclick"/>
-  <img src="https://img.shields.io/badge/%F0%9F%8E%AF-95%25%2B%20Better-3867d6?style=flat-square" alt="better"/>
-  <img src="https://img.shields.io/badge/%F0%9F%94%92-Privacy%20First-2ecc71?style=flat-square" alt="privacy"/>
-  <img src="https://img.shields.io/badge/%E2%9A%A1-Real--time-ffa502?style=flat-square" alt="realtime"/>
-</p>
-
-</div>
-
-</div>
 
 <!-- QUICK LINKS -->
 <p align="center">
