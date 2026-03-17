@@ -1,7 +1,10 @@
 <div align="center">
 
 <!-- FIRE ANIMATED HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=🔥%20PromptOptimizer&fontSize=90&fontAlignY=35&desc=AI%20Prompt%20Optimizer%20For%20ChatGPT%20and%20Claude&descSize=25&descAlignY=55&animation=twinkling" width="100%"/>
+<img 
+  src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=250&amp;section=header&amp;text=🔥%20PromptOptimizer&amp;fontSize=60&amp;fontAlignY=38&amp;desc=AI%20Prompt%20Optimizer%20For%20ChatGPT%20and%20Claude&amp;descSize=18&amp;descAlignY=60&amp;animation=twinkling" 
+  width="100%" 
+/>
 
 <!-- DYNAMIC BADGE CONSTELLATION -->
 <p align="center">
