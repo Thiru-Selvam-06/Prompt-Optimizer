@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Optimizer for ChatGPT & Claude",
+  "description": "Transform unclear questions into expert prompts. Get better AI responses from ChatGPT and Claude with one click. Powered by Gemini.",
+  "version": "2.1",
+  "action": {
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "prompt-engine.js",
+        "gemini-api.js",
+        "content.js"
+      ],
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://claude.ai/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ]
+}

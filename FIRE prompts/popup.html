@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIRE prompts — Prompt Optimizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-icon">🔥</div>
+      <div class="header-text">
+        <h1>FIRE prompts</h1>
+        <p class="subtitle">AI Prompt Optimizer</p>
+      </div>
+      <button id="settingsToggle" class="settings-btn" title="Settings">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33
+                   1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06
+                   a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09
+                   A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0
+                   9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33
+                   l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0
+                   4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Settings Panel (hidden by default) -->
+    <div id="settingsPanel" class="card settings-panel" style="display: none;">
+      <h3 class="settings-title">⚙️ Settings</h3>
+
+      <label for="apiKeyInput" class="input-label">Gemini API Key</label>
+      <div class="api-key-row">
+        <input type="password" id="apiKeyInput" class="input-field" placeholder="Paste Gemini key...">
+        <button id="toggleKeyVisibility" class="icon-button-sm" title="Show/hide key">👁️</button>
+      </div>
+
+      <label for="groqKeyInput" class="input-label" style="margin-top: 12px;">Groq API Key</label>
+      <div class="api-key-row">
+        <input type="password" id="groqKeyInput" class="input-field" placeholder="Paste Groq key...">
+        <button id="toggleGroqKeyVisibility" class="icon-button-sm" title="Show/hide key">👁️</button>
+      </div>
+
+      <div id="apiStatus" class="api-status" style="display: none;"></div>
+
+      <div class="settings-actions">
+        <button id="saveKeysBtn" class="button button-sm">Save & Verify All</button>
+        <button id="removeKeysBtn" class="button button-sm button-danger" style="display: none;">Clear Keys</button>
+      </div>
+
+      <p class="help-text">
+        Get keys at <a href="https://aistudio.google.com/apikey" target="_blank" class="link">Gemini</a> &
+        <a href="https://console.groq.com/keys" target="_blank" class="link">Groq</a>.
+      </p>
+    </div>
+
+    <!-- Status Badge -->
+    <div id="engineStatus" class="engine-status">
+      <span id="engineIcon">🔌</span>
+      <span id="engineLabel">Checking...</span>
+    </div>
+
+    <!-- Prompt Input -->
+    <div class="card">
+      <label for="userInput" class="input-label">Your Prompt</label>
+      <textarea id="userInput" class="textarea" placeholder="Paste your prompt here..." rows="4"></textarea>
+
+      <div class="select-row">
+        <div class="select-group">
+          <label for="categorySelect" class="input-label">Category</label>
+          <select id="categorySelect" class="select">
+            <option value="auto">🔍 Auto</option>
+            <option value="code">💻 Code</option>
+            <option value="writing">✍️ Writing</option>
+            <option value="analysis">📊 Analysis</option>
+            <option value="creative">🎨 Creative</option>
+            <option value="math">🔢 Math</option>
+            <option value="learning">📚 Learning</option>
+            <option value="business">💼 Business</option>
+            <option value="general">🌐 General</option>
+          </select>
+        </div>
+        <div class="select-group">
+          <label for="providerSelect" class="input-label">Provider</label>
+          <select id="providerSelect" class="select">
+            <option value="auto">🤖 Auto</option>
+            <option value="gemini">♊ Gemini</option>
+            <option value="groq">⚡ Groq</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="submitButton" class="button">🗿 Improvise</button>
+    </div>
+
+    <!-- Output -->
+    <div id="output" class="card output-card" style="display: none;">
+      <div class="output-header">
+        <div class="output-title">
+          <h3>Optimized Prompt</h3>
+          <span id="categoryBadge" class="badge"></span>
+        </div>
+        <button id="copyButton" class="icon-button" title="Copy to clipboard">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="response-container">
+        <pre id="responseText"></pre>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">Free & unlimited — powered by Gemini</p>
+  </div>
+
+  <script src="prompt-engine.js"></script>
+  <script src="gemini-api.js"></script>
+  <script src="groq-api.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>
